@@ -1,0 +1,90 @@
+#to-print{
+    width: 100%;
+}
+
+#to-print thead{
+  text-align: center;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+}
+
+@media print {
+    body * {
+      visibility: hidden;
+    }
+    #to-print, #to-print * {
+      visibility: visible;
+    }
+    /*#to-print {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }*/
+}
+
+@page {
+  size: auto;
+}
+
+.page-break{
+    page-break-after: always;
+}
+
+.no-border{
+    border: none;
+}
+
+.logo-report{
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.heading{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.sub-heading{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.thead-bg{
+  background-color: #d7d7d7;
+}
+
+.nowrap{
+  white-space: nowrap;
+}
+
+.hasBorder th{
+  border: 1px solid black;
+}
+
+.hasBorder td{
+  border: 1px solid black;
+}
+
+.sideBorder th{
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.sideBorder td{
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.hr-signature{
+  width: 100px;
+  margin-top: 0rem !important;
+  border-top: 1px solid black !important;
+}
